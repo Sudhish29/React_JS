@@ -1,8 +1,14 @@
+import Suddhi from "./Sudh";
 
 
 function App() {
   return (
- <h1>React</h1>
+    <> 
+    <h1>React</h1>
+    <Suddhi/>
+    
+    </>
+
   );
 }
 
