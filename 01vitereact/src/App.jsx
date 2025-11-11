@@ -1,6 +1,6 @@
 
 
-import Chai from "./chai"
+import Sudhish from "./sudh"
 
 
 function App() {
