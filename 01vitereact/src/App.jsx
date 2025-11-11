@@ -1,10 +1,17 @@
-import Sudhish from "./sudh"
+
+
+import Chai from "./chai"
+
 
 function App() {
-  
+  const username = "chai aur code"
 
   return (
-<Sudhish/>
+    <>
+    <Chai/>
+    <h1>chai aur react {username}</h1>
+    <p>test para</p>
+   </>
   )
 }
 
