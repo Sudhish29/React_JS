@@ -8,7 +8,10 @@ function App() {
   let [counter,setCounter]=useState(15)
   const addValue=()=>{
     console.log("Clicked to increase value",counter+1);
-    
+    if(counter>=20){
+      setCounter(20)
+      return;
+    }
     counter=counter+1
     setCounter(counter)
   }
@@ -16,10 +19,14 @@ function App() {
     console.log("Clicked to decrease value ",counter-1);
     
     setCounter(counter-1)
+   if(counter<=0){
+    setCounter(0)
+    return
+   }
   }
   return (
     <>
-      <h1>Counter App to add and subtract</h1>
+      <h1>Counter App </h1>
       <h2>Counter value:{counter}</h2>
       <button onClick={addValue}>Add Value:{counter}</button>
       <br />
