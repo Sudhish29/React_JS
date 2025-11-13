@@ -7,20 +7,20 @@ function App() {
   // let counter=15
   let [counter,setCounter]=useState(15)
   const addValue=()=>{
-    console.log("Clicked to increase value",counter+1);
-    if(counter>=20){
-      setCounter(20)
+    // console.log("Clicked to increase value",counter+1);
+    if(counter<20){
+     setCounter(prevCounter=>prevCounter+1)
       return;
     }
-    counter=counter+1
-    setCounter(counter)
+    
+   
   }
   const decreaseValue=()=>{
-    console.log("Clicked to decrease value ",counter-1);
+    // console.log("Clicked to decrease value ",counter-1);
     
-    setCounter(counter-1)
-   if(counter<=0){
-    setCounter(0)
+    
+   if(counter>0){
+  setCounter(prevCounter=>prevCounter-1)
     return
    }
   }
